@@ -1,6 +1,6 @@
 {
-  "name": "AutoAppraise AI",
-  "description": "A professional vehicle appraisal application featuring an interactive bodywork inspector and AI-powered vehicle identification.",
+  "name": "AutoGrade Pro",
+  "description": "Enterprise-grade vehicle valuation and condition reporting tool powered by AI.",
   "requestFramePermissions": [
     "camera"
   ]

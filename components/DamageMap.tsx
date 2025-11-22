@@ -59,10 +59,10 @@ const DamageMap: React.FC<DamageMapProps> = ({ markers, onAddMarker, onRemoveMar
           <button
             key={type}
             onClick={() => setSelectedTool(type)}
-            className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all ${
+            className={`flex items-center gap-2 px-3 py-2 rounded-md text-xs font-bold uppercase tracking-wide transition-all ${
               selectedTool === type
-                ? 'bg-white shadow-md ring-1 ring-gray-200 text-gray-900'
-                : 'text-gray-500 hover:bg-gray-200 hover:text-gray-700'
+                ? 'bg-white shadow-md ring-1 ring-slate-200 text-slate-900'
+                : 'text-slate-400 hover:bg-gray-100 hover:text-slate-600'
             }`}
           >
             <span className="flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full">
@@ -131,7 +131,9 @@ const DamageMap: React.FC<DamageMapProps> = ({ markers, onAddMarker, onRemoveMar
             </g>
           ))}
         </svg>
-        <p className="text-xs text-center text-gray-400 mt-2">Tap diagram to add defect marker. Tap marker to remove.</p>
+        <p className="text-[10px] text-center text-slate-400 mt-3 font-medium uppercase tracking-wide">
+          Select defect type from toolbar • Tap diagram to place marker • Tap existing marker to delete
+        </p>
       </div>
     </div>
   );
